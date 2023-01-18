@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         )*/
 
         PeriodicWorkRequestBuilder<MyWorkManager>(
-            30, TimeUnit.MINUTES,
+            18, TimeUnit.MINUTES,
             15, TimeUnit.MINUTES
         ).build().also {
             workManager.enqueue(it)
